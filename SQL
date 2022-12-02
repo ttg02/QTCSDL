@@ -159,3 +159,16 @@ insert into Ban_ChiTiet values ('HD5822-003','CB1', 3, 174000, null, 174000)
 insert into Ban_ChiTiet values ('HD2922-004','CB1', 4, 35000, null, 35000)
 go
 
+
+
+
+-- Tạo Index cho TenSP ở bảng SANPHAM
+        CREATE INDEX idx_TenSP ON dbo.SANPHAM (TenSP)
+        GO
+-- Tạo Index cho TenKH ở bảng KHACHHANG
+        CREATE INDEX idx_TenKH  ON dbo.KHACHHANG(TenKH)
+        GO
+-- Tạo Index cho TenNV ở bảng NHANVIEN
+        CREATE INDEX idx_TenNV ON dbo.NHANVIEN(TenNV)
+        GO
+
